@@ -1,0 +1,264 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Open Sans";
+}
+
+.nav-container {
+  max-width: 1710px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 700;
+  line-height: 1.75;
+  color: #0c0c0c;
+  background: #dcca87;
+  font-family: "Cormorant Upright";
+  padding: 8px 32px;
+  border: 1px solid rgb(220, 202, 135);
+  transition: all 0.3s ease-in;
+}
+.btn:hover {
+  color: #fff;
+  background: transparent;
+}
+
+.header {
+  position: relative;
+  background: #0c0c0c;
+  min-height: 100vh;
+}
+.header__sidebar {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  top: 46.7391304348%;
+  left: 3.125%;
+  transform: rotate(-90deg);
+}
+.header__sidebar-item {
+  font-size: 18px;
+  line-height: 1.75;
+}
+.header__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 205px;
+  padding: 48px 0 78px 0;
+}
+.header__suptitle {
+  position: relative;
+  font-size: 23px;
+  font-weight: 700;
+  font-family: "Cormorant Upright";
+  line-height: 1.3;
+  text-transform: capitalize;
+  margin: 0 0 25px 0;
+}
+.header__suptitle::before {
+  content: url(./../img/header/spoon-right.svg);
+  width: 40px;
+  height: 9px;
+  position: absolute;
+  top: 18px;
+}
+.header__title {
+  max-width: 390px;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: capitalize;
+  color: #dcca87;
+  font-family: "Cormorant Upright";
+  margin: 0 0 32px 0;
+}
+.header__text {
+  max-width: 450px;
+  line-height: 1.75;
+  color: #aaa;
+  margin: 0 0 32px 0;
+}
+.header__img {
+  position: relative;
+  width: 645px;
+  height: 715px;
+}
+.header__img-inner {
+  position: absolute;
+  z-index: 2;
+}
+.header__img::before {
+  content: "";
+  width: 435px;
+  height: 435px;
+  background: #dcca87;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -25px;
+}
+.header__img::after {
+  content: "";
+  width: 435px;
+  height: 435px;
+  background: #dcca87;
+  position: absolute;
+  z-index: 0;
+  top: -25px;
+  right: 0;
+}
+.header__pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  padding: 0 0 114px 0;
+}
+.header__pages-line {
+  width: 16px;
+  height: 0;
+  border: 1px solid rgb(220, 202, 135);
+}
+.header__pages-item {
+  font-weight: 600;
+  line-height: 1.75;
+  text-transform: capitalize;
+  color: #F5EFDB;
+  transition: color 0.3s ease-in;
+  cursor: pointer;
+}
+.header__pages-item--active {
+  color: #fff !important;
+}
+.header__pages-item:hover {
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+  background: transparent;
+}
+.nav__logo {
+  font-size: 44px;
+  font-weight: 700;
+  font-family: "Cormorant Upright";
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.nav__list {
+  display: flex;
+  gap: 32px;
+}
+.nav__link {
+  color: #fff;
+  line-height: 1.75;
+  transition: color 0.3s ease-in;
+}
+.nav__link:hover {
+  color: #dcca87;
+}
+.nav__users {
+  display: flex;
+  gap: 100px;
+}/*# sourceMappingURL=main.css.map */

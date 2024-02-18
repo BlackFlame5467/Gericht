@@ -1,0 +1,30 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 32px 0;
+    background: transparent;
+	&__logo {
+		font-size: 44px;
+		font-weight: 700;
+		font-family: $ff-accent;
+		line-height: 1.3;
+		text-transform: uppercase;
+	}
+	&__list {
+		display: flex;
+		gap: 32px;
+	}
+	&__link {
+		color: $color-main;
+		line-height: 1.75;
+        transition: color .3s ease-in;
+        &:hover {
+            color: $color-accent;
+        }
+	}
+    &__users {
+        display: flex;
+        gap: 100px;
+    }
+}

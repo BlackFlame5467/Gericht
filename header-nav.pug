@@ -1,0 +1,16 @@
+- const navList = [{name: "Home"},{name: "Pages"},{name: "Contact Us"},{name: "Blog"},{name: "Landing"},]
+        
+
+.nav-container 
+    nav.nav 
+        a.nav__logo Gericht
+        ul.nav__list 
+            each item in navList 
+                li 
+                    a.nav__link(href="#") #{item.name}
+        .nav__users     
+            a.nav__link(href="#") 
+                | Log In / Registration
+            a.nav__link(href="#") 
+                | Book Table
+            

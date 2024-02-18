@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+	font-size: 16px;
+	color: $color-main;
+	font-family: $ff-main;
+}
+
+.nav-container {
+	max-width: 1710px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.container {
+	max-width: 1330px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.btn {
+	font-weight: 700;
+	line-height: 1.75;
+	color: $color-black;
+	background: $bg-accent;
+	font-family: $ff-accent;
+	padding: 8px 32px;
+	border: 1px solid $border-btn;
+	transition: all 0.3s ease-in;
+	
+	&:hover {
+		color: $color-main;
+		background: transparent;
+	}
+}
