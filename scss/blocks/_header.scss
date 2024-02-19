@@ -32,7 +32,7 @@
 		text-transform: capitalize;
 		margin: 0 0 25px 0;
 		&::before {
-			content: url(./../img/header/spoon-right.svg);
+			content: url(./../img/icons/spoon-right.svg);
 			width: 40px;
 			height: 9px;
 			position: absolute;
@@ -56,34 +56,7 @@
 		margin: 0 0 32px 0;
 	}
 	&__img {
-		position: relative;
-		width: 645px;
-		height: 715px;
-		&-inner {
-			position: absolute;
-			z-index: 2;
-		}
 
-		&::before {
-			content: "";
-			width: 435px;
-			height: 435px;
-			background: $bg-accent;
-			position: absolute;
-			z-index: 0;
-			bottom: 0;
-			left: -25px;
-		}
-		&::after {
-			content: "";
-			width: 435px;
-			height: 435px;
-			background: $bg-accent;
-			position: absolute;
-			z-index: 0;
-			top: -25px;
-			right: 0;
-		}
 	}
 	&__pages {
 		display: flex;
@@ -102,15 +75,15 @@
 			line-height: 1.75;
 			text-transform: capitalize;
 			color: $color-light-accent;
-            transition: color .3s ease-in;
-            cursor: pointer;
+			transition: color 0.3s ease-in;
+			cursor: pointer;
 
-            &--active {
-                color: $color-main !important;
-            }
-            &:hover {
-                color: $color-main;
-            }
+			&--active {
+				color: $color-main !important;
+			}
+			&:hover {
+				color: $color-main;
+			}
 		}
 	}
 }

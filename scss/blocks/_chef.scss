@@ -1,0 +1,66 @@
+.chef {
+	padding: 130px 0;
+	background: url(../img/chef/bg.jpeg) center / cover no-repeat;
+
+	&__img {
+		&::before {
+			bottom: -51px;
+		}
+		&::after {
+			right: 22px;
+		}
+	}
+	&__inner {
+		display: flex;
+		justify-content: center;
+		gap: 96px;
+	}
+	&__suptitle {
+		position: relative;
+
+		font-size: 23px;
+		font-family: $ff-accent;
+		font-weight: 700;
+		line-height: 1.3;
+		text-transform: capitalize;
+		margin: 0 0 25px 0;
+
+		&::before {
+			content: url(../img/icons/spoon-right.svg);
+			position: absolute;
+			bottom: -25px;
+		}
+	}
+	&__title {
+		margin: 0 0 64px 0;
+	}
+	&__text {
+		max-width: 580px;
+		font-style: italic;
+		line-height: 1.75;
+		color: $color-gray;
+
+		&-firstline {
+			display: flex;
+			align-items: flex-end;
+			gap: 10px;
+		}
+	}
+	&__author-title {
+		font-size: 32px;
+		line-height: 1.3;
+		text-transform: capitalize;
+		color: $color-accent;
+		margin: 64px 0 8px 0;
+		font-family: $ff-accent;
+	}
+	&__author-subtitle {
+		color: $color-gray;
+		margin: 0 0 64px 0;
+	}
+	&__author-quote {
+		line-height: 1.3;
+		font-size: 64px;
+		color: $color-gray;
+	}
+}

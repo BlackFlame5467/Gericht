@@ -1,0 +1,39 @@
+- const personList = [{title: '2 Person'},{title: '3 Person'},{title: '4 Person'},{title: '8 Person'}];
+- const dateList = [{title: '13/05/2021'},{title: '14/05/2021'},{title: '15/05/2021'},{title: '16/05/2021'}];
+- const timeList = [{title: '13:00 AM'},{title: '14:00 AM'},{title: '18:00 AM'},{title: '20:00 AM'}];
+
+
+section.reserv 
+    .container 
+        .reserv__inner  
+            h3(class="reserv__suptitle suptitle").reserv__suptitle Reservations
+            h2(class="reserv__title title") Book A Table
+            .reserv__selects    
+                .reserv__persons
+                    .reserv__select 
+                        h3.reserv__select-title 1 person
+                        button.reserv__select-btn 
+                            img(src="./img/icons/arrow-down.svg", alt="")
+                    .reserv__list 
+                        each item in personList 
+                            a.reserv__list-item #{item.title}
+                .reserv__persons
+                    .reserv__select 
+                        h3.reserv__select-title 12/05/2021
+                        button.reserv__select-btn 
+                            img(src="./img/icons/arrow-down.svg", alt="")
+                    .reserv__list 
+                        each item in dateList 
+                            a.reserv__list-item #{item.title}
+                .reserv__persons
+                    .reserv__select 
+                        h3.reserv__select-title 11:00 AM
+                        button.reserv__select-btn 
+                            img(src="./img/icons/arrow-down.svg", alt="")
+                    .reserv__list 
+                        each item in timeList 
+                            a.reserv__list-item #{item.title}
+            button(class="reserv__btn btn") Book Now
+
+
+                

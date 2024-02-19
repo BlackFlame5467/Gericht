@@ -1,0 +1,35 @@
+- const drinksList = [{title: "Chapel Hill Shiraz", compos: "AU | Bottle", price: "$56"},{title: "Catena Malbec", compos: "AR | Bottle", price: "$59"},{title: "La Vieille Rosé", compos: "FR | 750 ml", price: "$44"},{title: "Rhino Pale Ale", compos: "CA | 750 ml", price: "$31"},{title: "Irish Guinness", compos: "IE | 750 ml", price: "$26"}];
+- const cocktailsList = [{title: "Aperol Spritz", compos: "AU | Bottle", price: "$56"},{title: "Negroni", compos: "Gin | Sweet Vermouth | Campari | Orange garnish", price: "$26"},{title: "Dark 'N' Stormy", compos: "Dark rum | Ginger beer | Slice of lime. ", price: "$16"},{title: "Daiquiri", compos: "Rum | Citrus juice | Sugar", price: "$10"},{title: "Old Fashioned", compos: "Bourbon | Brown sugar | Angostura Bitters", price: "$31"}];
+
+
+
+section.special
+    .container 
+        .special__wrapper 
+            h3(class="special__suptitle suptitle") Menu that fits you palatte
+            h2(class="special__title title") Today’s Special
+            .special__inner     
+                .special__menu  
+                    h3.special__menu-title Wine & Beer
+                    .menu 
+                        each item in drinksList 
+                            .menu__item-inner                        
+                                .menu__item     
+                                    h4.menu__title #{item.title}
+                                    .menu__line 
+                                    p.menu__price #{item.price}
+                                p.menu__compos #{item.compos}
+                img(src="./img/special/special-bg.png", alt="")
+                .special__menu  
+                    h3.special__menu-title Cocktails
+                    .menu 
+                        each item in cocktailsList
+                            .menu__item-inner 
+                                .menu__item     
+                                    h4.menu__title #{item.title}
+                                    .menu__line 
+                                    p.menu__price #{item.price}
+                                p.menu__compos #{item.compos}
+        .special__btn
+            button(class="btn") View More
+                        

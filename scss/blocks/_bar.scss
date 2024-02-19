@@ -1,0 +1,33 @@
+.bar {
+	position: relative;
+	padding: 240px 0;
+	background: url(../img/bar/bar-bg.png) center no-repeat;
+	&__wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $bg-main;
+		opacity: 0.4;
+	}
+	&__inner {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 64px;
+	}
+	&__link {
+		font-size: 64px;
+		font-weight: 600;
+		line-height: 1.3;
+		text-transform: capitalize;
+		transition: text-decoration 0.3s ease-in;
+		color: $color-main;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
