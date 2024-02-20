@@ -1,0 +1,28 @@
+.video {
+	position: relative;
+	background: url(../img/video/video-bg.jpeg) center / cover no-repeat;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $bg-main;
+		opacity: 0.4;
+		z-index: 1;
+	}
+	&__play {
+		position: absolute;
+		z-index: 2;
+
+		transition: transform 0.3s ease-in;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.blog {
+	background: $bg-main;
+	padding: 150px 0;
+	text-align: center;
+	&__cards {
+		display: flex;
+		gap: 32px;
+		margin: 64px 0;
+	}
+	&__card {
+		&-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 32px;
+		}
+		&-info {
+			display: flex;
+			justify-content: space-between;
+			margin: 24px 0 0 0;
+		}
+		&-title {
+			text-align: left;
+			a {
+				font-family: $ff-accent;
+				font-size: 36px;
+				line-height: 1.3;
+				text-transform: capitalize;
+				color: $color-accent;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		&-text {
+			line-height: 1.75;
+			text-align: left;
+			color: $color-gray;
+		}
+		&-link {
+			display: block;
+			text-align: left;
+			font-family: $ff-accent;
+			font-weight: 700;
+			line-height: 1.75;
+			color: $color-accent;
+		}
+	}
+}

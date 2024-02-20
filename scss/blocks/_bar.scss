@@ -13,7 +13,7 @@
 	}
 	&__inner {
 		position: relative;
-		display: flex;
+		display: inline-flex;
 		flex-direction: column;
 		justify-content: center;
 		gap: 64px;

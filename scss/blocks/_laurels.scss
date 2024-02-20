@@ -1,0 +1,49 @@
+.laurels {
+	background: url(../img/laurels/laurels-bg.jpeg) center / cover no-repeat;
+	padding: 130px 0;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 100px;
+	}
+	&__content {
+		max-width: 650px;
+	}
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 64px 32px;
+		margin: 100px 0 0 0;
+	}
+	&__card {
+		display: flex;
+		gap: 32px;
+		&-content {
+			max-width: 190px;
+		}
+		&-title {
+			font-size: 23px;
+			font-weight: 700;
+			line-height: 1.3;
+			text-transform: capitalize;
+			color: $color-accent;
+			font-family: $ff-accent;
+		}
+		&-text {
+			line-height: 1.75;
+			color: $color-gray;
+		}
+	}
+	&__img {
+		position: relative;
+
+		&::before {
+			content: url(../img/laurels/G.png);
+			position: absolute;
+			left: -70px;
+			bottom: 0;
+		}
+	}
+}

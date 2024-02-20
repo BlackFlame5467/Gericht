@@ -1,0 +1,18 @@
+- const laurelsList = [{img: "./img/laurels/card-1.svg", title: "Bib Gourmond", text: "Lorem ipsum dolor sit amet, consectetur."},{img: "./img/laurels/card-2.svg", title: "Rising Star", text: "Lorem ipsum dolor sit amet, consectetur."},{img: "./img/laurels/card-3.svg", title: "AA Hospitality ", text: "Lorem ipsum dolor sit amet, consectetur."},{img: "./img/laurels/card-4.svg", title: "Outstanding Chef", text: "Lorem ipsum dolor sit amet, consectetur."}];
+
+
+section.laurels     
+    .container 
+       .laurels__inner
+            .laurels__content 
+                h3(class="laurels__suptitle suptitle") Awards & recognition
+                h2(class="laurels__title title") Our Laurels
+                .laurels__cards 
+                    each item in laurelsList
+                        .laurels__card 
+                            img.laurels__card-img(src=item.img, alt="")
+                            .laurels__card-content
+                                h3.laurels__card-title #{item.title}
+                                h4.laurels__card-text #{item.text}
+            .laurels__img 
+                img(src="./img/laurels/laurels-img.jpeg", alt="")

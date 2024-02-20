@@ -1,0 +1,59 @@
+.photo {
+	background: url(../img/photo/photo-bg.jpeg) center / cover no-repeat;
+	padding: 130px 0;
+	&__container {
+		max-width: 1640px;
+		padding: 0 15px;
+		margin-left: auto;
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+	&__content {
+		max-width: 450px;
+	}
+	&__text {
+		line-height: 1.75;
+		color: $color-gray;
+		margin: 0 0 24px 0;
+	}
+	&__imgs {
+		display: flex;
+		gap: 32px;
+	}
+	&__img {
+		position: relative;
+		border: 2px solid $border-inner;
+		&::before {
+			content: url(../img/photo/inst.svg);
+			position: absolute;
+			top: 43%;
+			left: 43%;
+			z-index: 3;
+			opacity: 0;
+			transition: opacity 0.3s ease-in;
+		}
+		&::after {
+			opacity: 0;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(
+				230.41deg,
+				rgba(0, 0, 0, 0.75) 1.353%,
+				rgba(0, 0, 0, 0.64) 98.664%
+			);
+			transition: opacity 0.25s ease-in;
+		}
+
+		&:hover::after,
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+}

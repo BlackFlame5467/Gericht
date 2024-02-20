@@ -1,0 +1,17 @@
+- const customersList = [{img: "./img/customers/card-1.jpeg", text: "Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.", author: "Wade Warren", subtitle: "Sommelier"},{img: "./img/customers/card-2.jpeg", text: "Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.", author: "Jane Cooper", subtitle: "Chef"},{img: "./img/customers/card-3.jpeg", text: "Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.", author: "Robert Fox", subtitle: "Chef"},{img: "./img/customers/card-4.jpeg", text: "Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.", author: "Brooklyn Simmons", subtitle: "Caterer"}];
+
+
+
+section.customers 
+    .container 
+        h3(class="customers__suptitle suptitle") Testimony
+        h2(class="customers__title title") Happy customers
+        .customers__cards 
+            each item in customersList
+                .customers__card 
+                    .customers__img
+                        img(src=item.img, alt="")
+                    .customers__card-content    
+                        p.customers__text  #{item.text}
+                        h3.customers__author #{item.author}
+                        h4.customers__subtitle #{item.subtitle}

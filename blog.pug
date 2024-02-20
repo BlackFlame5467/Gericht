@@ -1,0 +1,22 @@
+- const blogList = [{img: "./img/blog/card-1.jpeg", date: "16 Apr 2021", author: "- Annalisa L", title: "tips for prepping and caring for your grill", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in."},{img: "./img/blog/card-2.jpeg", date: "23 May 2021", author: "-John Micheal", title: "summer cocktails and mocktails", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in."},{img: "./img/blog/card-3.jpeg", date: "06 Aug 2021", author: "-Fred W", title: "easy cooking for college students", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in."}];
+
+
+
+section.blog 
+    .container 
+        h3(class="blog__suptitle suptitle") Blogs
+        h2(class="blog__title title") Gerícht updates
+        .blog__cards 
+            each item in blogList
+                .blog__card     
+                    .blog__card-img 
+                        img(src=item.img, alt="")
+                    .blog__card-content
+                        .blog__card-info
+                            p.blog__card-date #{item.date}
+                            p.blog__card-author #{item.author}
+                        h3.blog__card-title
+                            a(href="#")  #{item.title}
+                        p.blog__card-text   #{item.text}
+                        a.blog__card-link(href="#") Read More
+        button(class="blog__btn btn") View More
